@@ -118,24 +118,24 @@ is "freebie".
 
 #### Freebie
 
-- `Freebie#dev`
-  - returns the `Dev` instance for this Freebie
-- `Freebie#company`
-  - returns the `Company` instance for this Freebie
+//- `Freebie#dev`
+  //- returns the `Dev` instance for this Freebie
+//- `Freebie#company`
+ // - returns the `Company` instance for this Freebie
 
 #### Company
 
-- `Company#freebies`
-  - returns a collection of all the freebies for the Company
-- `Company#devs`
-  - returns a collection of all the devs who collected freebies from the Company
+//- `Company#freebies`
+ // - returns a collection of all the freebies for the Company
+//- `Company#devs`
+  //- returns a collection of all the devs who collected freebies from the Company
 
 #### Dev
 
-- `Dev#freebies`
-  - returns a collection of all the freebies that the Dev has collected
-- `Dev#companies`
-  - returns a collection of all the companies that the Dev has collected
+//- `Dev#freebies`
+ // - returns a collection of all the freebies that the Dev has collected
+//- `Dev#companies`
+  //- returns a collection of all the companies that the Dev has collected
     freebies from
 
 Use `rake console` and check that these methods work before proceeding. For
@@ -147,23 +147,23 @@ companies for the first dev in the database based on your seed data; and
 
 #### Freebie
 
-- `Freebie#print_details`
-  - should return a string formatted as follows:
+//- `Freebie#print_details`
+ // - should return a string formatted as follows:
     `{insert dev's name} owns a {insert freebie's item_name} from {insert company's name}`
 
 #### Company
 
-- `Company#give_freebie(dev, item_name, value)`
-  - takes a `dev` (an instance of the `Dev` class), an `item_name` (string), and a `value`
+//- `Company#give_freebie(dev, item_name, value)`
+  //- takes a `dev` (an instance of the `Dev` class), an `item_name` (string), and a `value`
     as arguments, and creates a new `Freebie` instance associated with this
     company and the given dev
-- `Company.oldest_company`
-  - returns the `Company` instance with the earliest founding year
+//- `Company.oldest_company`
+  //- returns the `Company` instance with the earliest founding year
 
 #### Dev
 
-- `Dev#received_one?(item_name)`
-  - accepts an `item_name` (string) and returns true if any of the freebies
+//- `Dev#received_one?(item_name)`
+ // - accepts an `item_name` (string) and returns true if any of the freebies
     associated with the dev has that `item_name`, otherwise returns false
 - `Dev#give_away(dev, freebie)`
   - accepts a `Dev` instance and a `Freebie` instance, changes the freebie's dev
